@@ -11,7 +11,11 @@ const Draw = createDrawerNavigator()
 const Drawer = () => {
   return (
     <Draw.Navigator>
-      <Draw.Screen name="BottomTabs" component={BottomTabs} />
+      <Draw.Screen
+        name="BottomTabs"
+        component={BottomTabs}
+        options={{ headerShown: false }}
+      />
       <Draw.Screen name="Profile" component={Profile} />
     </Draw.Navigator>
   )

@@ -18,10 +18,26 @@ const _MessagesStack = createStackNavigator()
 const BottomTabs = () => {
   return (
     <Tabs.Navigator>
-      <Tabs.Screen name="HomeStack" component={HomeStack} />
-      <Tabs.Screen name="SearchStack" component={SearchStack} />
-      <Tabs.Screen name="NotificationsStack" component={NotificationsStack} />
-      <Tabs.Screen name="MessagesStack" component={MessagesStack} />
+      <Tabs.Screen
+        name="HomeStack"
+        component={HomeStack}
+        options={{ headerShown: false }}
+      />
+      <Tabs.Screen
+        name="SearchStack"
+        component={SearchStack}
+        options={{ headerShown: false }}
+      />
+      <Tabs.Screen
+        name="NotificationsStack"
+        component={NotificationsStack}
+        options={{ headerShown: false }}
+      />
+      <Tabs.Screen
+        name="MessagesStack"
+        component={MessagesStack}
+        options={{ headerShown: false }}
+      />
     </Tabs.Navigator>
   )
 }
